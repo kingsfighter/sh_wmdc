@@ -1,0 +1,16 @@
+BODY    { font-size: 9pt; color: #666666; }
+TD	{ font-size: 9pt; color: #666666; }
+a:link, a:active, a:visited
+	{ font-size: 9pt;
+	  color: #666666;
+ 	  text-decoration: none; }
+a:hover { font-size: 9pt;
+	  color: 3FA6B6;
+	  text-decoration: underline;}
+.log	{ height:18; width: 70}
+.input	{ height:18; }
+.yin    { FILTER: blur(direction=120,strength=3); }
+.backs  { BACKGROUND-COLOR: #DBC2B0; }
+.backq  { BACKGROUND-COLOR: #F5EFE7; }
+.photo:hover 
+        {  LEFT: 1px; COLOR: #ff0099; POSITION: relative; TOP: 1px; TEXT-DECORATION: none; }

@@ -1,0 +1,76 @@
+    <filter>
+        <filter-name>Set Character Encoding</filter-name>
+        <filter-class>filters.SetCharacterEncodingFilter</filter-class>
+        <init-param>
+          <param-name>encoding</param-name>
+          <param-value>GBK</param-value>
+        </init-param>
+   </filter>
+   <filter-mapping>
+        <filter-name>Set Character Encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+   </filter-mapping>
+   <servlet>
+        <servlet-name>yonghuServlet</servlet-name>
+        <servlet-class>com.servlet.yonghuServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>yonghuServlet</servlet-name>
+ <url-pattern>/yonghuServlet</url-pattern>
+   </servlet-mapping>
+<servlet>
+        <servlet-name>quanxianServlet</servlet-name>
+        <servlet-class>com.servlet.quanxianServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>quanxianServlet</servlet-name>
+ <url-pattern>/quanxianServlet</url-pattern>
+   </servlet-mapping>
+<servlet>
+        <servlet-name>splbServlet</servlet-name>
+        <servlet-class>com.servlet.splbServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>splbServlet</servlet-name>
+ <url-pattern>/splbServlet</url-pattern>
+   </servlet-mapping>
+<servlet>
+        <servlet-name>shangpinServlet</servlet-name>
+        <servlet-class>com.servlet.shangpinServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>shangpinServlet</servlet-name>
+ <url-pattern>/shangpinServlet</url-pattern>
+   </servlet-mapping>
+<servlet>
+        <servlet-name>dingdanServlet</servlet-name>
+        <servlet-class>com.servlet.dingdanServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>dingdanServlet</servlet-name>
+ <url-pattern>/dingdanServlet</url-pattern>
+   </servlet-mapping>
+<servlet>
+        <servlet-name>ddmxServlet</servlet-name>
+        <servlet-class>com.servlet.ddmxServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>ddmxServlet</servlet-name>
+ <url-pattern>/ddmxServlet</url-pattern>
+   </servlet-mapping>
+<servlet>
+        <servlet-name>xinwenServlet</servlet-name>
+        <servlet-class>com.servlet.xinwenServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>xinwenServlet</servlet-name>
+ <url-pattern>/xinwenServlet</url-pattern>
+   </servlet-mapping>
+<servlet>
+        <servlet-name>pinglunServlet</servlet-name>
+        <servlet-class>com.servlet.pinglunServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+   <servlet-name>pinglunServlet</servlet-name>
+ <url-pattern>/pinglunServlet</url-pattern>
+   </servlet-mapping>
