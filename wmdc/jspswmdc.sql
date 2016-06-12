@@ -21,12 +21,12 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `ddmx`;
 CREATE TABLE `ddmx` (
   `ddmxid` int(11) NOT NULL auto_increment,
-  `dd` varchar(40) default NULL COMMENT 'è®¢å•',
-  `sp` varchar(40) default NULL COMMENT 'å•†å“',
-  `sl` varchar(40) default NULL COMMENT 'æ•°é‡',
-  `jg` varchar(40) default NULL COMMENT 'ä»·æ ¼',
-  `sj` varchar(40) default NULL COMMENT 'æ—¶é—´',
-  `zt` varchar(40) default NULL COMMENT 'çŠ¶æ€',
+  `dd` varchar(40) default NULL COMMENT '¶©µ¥',
+  `sp` varchar(40) default NULL COMMENT 'ÉÌÆ·',
+  `sl` varchar(40) default NULL COMMENT 'ÊıÁ¿',
+  `jg` varchar(40) default NULL COMMENT '¼Û¸ñ',
+  `sj` varchar(40) default NULL COMMENT 'Ê±¼ä',
+  `zt` varchar(40) default NULL COMMENT '×´Ì¬',
   `yh` varchar(40) default NULL,
   PRIMARY KEY  (`ddmxid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=gb2312;
@@ -34,21 +34,21 @@ CREATE TABLE `ddmx` (
 -- ----------------------------
 -- Records of ddmx
 -- ----------------------------
-INSERT INTO `ddmx` VALUES ('1', '1', '1', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('2', '1', '1', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('3', '2', '1', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('4', '2', '6', '1', '8', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('5', '3', '1', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('6', '3', '1', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('7', '3', '1', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('8', '4', '1', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('9', '4', '2', '1', '15', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('10', '5', '1', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('11', '5', '3', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('12', '6', '1', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('13', '6', '1', '1', '12', null, 'å·²å¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('14', null, '1', '1', '12', null, 'æœªå¤„ç†', '123');
-INSERT INTO `ddmx` VALUES ('15', null, '1', '1', '12', null, 'æœªå¤„ç†', 'admin');
+INSERT INTO `ddmx` VALUES ('1', '1', '1', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('2', '1', '1', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('3', '2', '1', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('4', '2', '6', '1', '8', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('5', '3', '1', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('6', '3', '1', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('7', '3', '1', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('8', '4', '1', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('9', '4', '2', '1', '15', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('10', '5', '1', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('11', '5', '3', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('12', '6', '1', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('13', '6', '1', '1', '12', null, 'ÒÑ´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('14', null, '1', '1', '12', null, 'Î´´¦Àí', '123');
+INSERT INTO `ddmx` VALUES ('15', null, '1', '1', '12', null, 'Î´´¦Àí', 'admin');
 
 -- ----------------------------
 -- Table structure for dingdan
@@ -56,13 +56,13 @@ INSERT INTO `ddmx` VALUES ('15', null, '1', '1', '12', null, 'æœªå¤„ç†', 'admin
 DROP TABLE IF EXISTS `dingdan`;
 CREATE TABLE `dingdan` (
   `ddid` int(11) NOT NULL auto_increment,
-  `ddmc` varchar(40) default NULL COMMENT 'è®¢å•åç§°',
-  `yh` varchar(40) default NULL COMMENT 'ç”¨æˆ·',
-  `gmsj` varchar(40) default NULL COMMENT 'è´­ä¹°æ—¶é—´',
-  `zt` varchar(40) default NULL COMMENT 'çŠ¶æ€',
-  `dz` varchar(40) default NULL COMMENT 'åœ°å€',
-  `dh` varchar(40) default NULL COMMENT 'ç”µè¯',
-  `shr` varchar(40) default NULL COMMENT 'æ”¶è´§äºº',
+  `ddmc` varchar(40) default NULL COMMENT '¶©µ¥Ãû³Æ',
+  `yh` varchar(40) default NULL COMMENT 'ÓÃ»§',
+  `gmsj` varchar(40) default NULL COMMENT '¹ºÂòÊ±¼ä',
+  `zt` varchar(40) default NULL COMMENT '×´Ì¬',
+  `dz` varchar(40) default NULL COMMENT 'µØÖ·',
+  `dh` varchar(40) default NULL COMMENT 'µç»°',
+  `shr` varchar(40) default NULL COMMENT 'ÊÕ»õÈË',
   `zj` float(11,0) default NULL,
   PRIMARY KEY  (`ddid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=gb2312;
@@ -70,12 +70,12 @@ CREATE TABLE `dingdan` (
 -- ----------------------------
 -- Records of dingdan
 -- ----------------------------
-INSERT INTO `dingdan` VALUES ('1', 'null', '123', '2015-04-23 21:56:48', 'å·²å¤„ç†', '123', '12345678901', '123', '24');
-INSERT INTO `dingdan` VALUES ('2', 'null', '123', '2015-04-23 22:02:35', 'å·²å¤„ç†', '1231', '12345678901', '23', '20');
-INSERT INTO `dingdan` VALUES ('3', 'null', '123', '2015-04-23 17:05:40', 'å·²å¤„ç†', '123', '1232266516', '123', '36');
-INSERT INTO `dingdan` VALUES ('4', 'null', '123', '2015-04-23 18:00:47', 'å·²å¤„ç†', '12313', '1231233333', '12312312', '27');
-INSERT INTO `dingdan` VALUES ('5', 'null', '123', '2015-04-23 18:40:53', 'å·²å¤„ç†', '31231231', '12312312313', '33131232131', '24');
-INSERT INTO `dingdan` VALUES ('6', null, '123', '2016-04-27 10:44:55', 'æœªå¤„ç†', '312312', '12312123123', '312312', '24');
+INSERT INTO `dingdan` VALUES ('1', 'null', '123', '2015-04-23 21:56:48', 'ÒÑ´¦Àí', '123', '12345678901', '123', '24');
+INSERT INTO `dingdan` VALUES ('2', 'null', '123', '2015-04-23 22:02:35', 'ÒÑ´¦Àí', '1231', '12345678901', '23', '20');
+INSERT INTO `dingdan` VALUES ('3', 'null', '123', '2015-04-23 17:05:40', 'ÒÑ´¦Àí', '123', '1232266516', '123', '36');
+INSERT INTO `dingdan` VALUES ('4', 'null', '123', '2015-04-23 18:00:47', 'ÒÑ´¦Àí', '12313', '1231233333', '12312312', '27');
+INSERT INTO `dingdan` VALUES ('5', 'null', '123', '2015-04-23 18:40:53', 'ÒÑ´¦Àí', '31231231', '12312312313', '33131232131', '24');
+INSERT INTO `dingdan` VALUES ('6', null, '123', '2016-04-27 10:44:55', 'Î´´¦Àí', '312312', '12312123123', '312312', '24');
 
 -- ----------------------------
 -- Table structure for pinglun
@@ -83,10 +83,10 @@ INSERT INTO `dingdan` VALUES ('6', null, '123', '2016-04-27 10:44:55', 'æœªå¤„ç
 DROP TABLE IF EXISTS `pinglun`;
 CREATE TABLE `pinglun` (
   `plid` int(11) NOT NULL auto_increment,
-  `sp` varchar(40) default NULL COMMENT 'å•†å“',
-  `pl` varchar(40) default NULL COMMENT 'è¯„è®º',
-  `yh` varchar(40) default NULL COMMENT 'ç”¨æˆ·',
-  `sj` varchar(40) default NULL COMMENT 'æ—¶é—´',
+  `sp` varchar(40) default NULL COMMENT 'ÉÌÆ·',
+  `pl` varchar(40) default NULL COMMENT 'ÆÀÂÛ',
+  `yh` varchar(40) default NULL COMMENT 'ÓÃ»§',
+  `sj` varchar(40) default NULL COMMENT 'Ê±¼ä',
   PRIMARY KEY  (`plid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=gb2312;
 
@@ -101,15 +101,15 @@ INSERT INTO `pinglun` VALUES ('1', '1', '123', '123', '2015-04-23 22:04:23');
 DROP TABLE IF EXISTS `quanxian`;
 CREATE TABLE `quanxian` (
   `qxid` int(11) NOT NULL auto_increment,
-  `qx` varchar(40) default NULL COMMENT 'æƒé™',
+  `qx` varchar(40) default NULL COMMENT 'È¨ÏŞ',
   PRIMARY KEY  (`qxid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=gb2312;
 
 -- ----------------------------
 -- Records of quanxian
 -- ----------------------------
-INSERT INTO `quanxian` VALUES ('1', 'ç®¡ç†å‘˜');
-INSERT INTO `quanxian` VALUES ('2', 'ç”¨æˆ·');
+INSERT INTO `quanxian` VALUES ('1', '¹ÜÀíÔ±');
+INSERT INTO `quanxian` VALUES ('2', 'ÓÃ»§');
 
 -- ----------------------------
 -- Table structure for shangpin
@@ -117,13 +117,13 @@ INSERT INTO `quanxian` VALUES ('2', 'ç”¨æˆ·');
 DROP TABLE IF EXISTS `shangpin`;
 CREATE TABLE `shangpin` (
   `spid` int(11) NOT NULL auto_increment,
-  `sp` varchar(40) default NULL COMMENT 'å•†å“',
-  `lb` varchar(40) default NULL COMMENT 'ç±»åˆ«',
-  `cd` varchar(40) default NULL COMMENT 'äº§åœ°',
-  `jg` varchar(40) default NULL COMMENT 'ä»·æ ¼',
-  `ms` varchar(400) default NULL COMMENT 'æè¿°',
-  `tp` varchar(40) default NULL COMMENT 'å›¾ç‰‡',
-  `sftj` varchar(40) default NULL COMMENT 'æ˜¯å¦æ¨è',
+  `sp` varchar(40) default NULL COMMENT 'ÉÌÆ·',
+  `lb` varchar(40) default NULL COMMENT 'Àà±ğ',
+  `cd` varchar(40) default NULL COMMENT '²úµØ',
+  `jg` varchar(40) default NULL COMMENT '¼Û¸ñ',
+  `ms` varchar(400) default NULL COMMENT 'ÃèÊö',
+  `tp` varchar(40) default NULL COMMENT 'Í¼Æ¬',
+  `sftj` varchar(40) default NULL COMMENT 'ÊÇ·ñÍÆ¼ö',
   `sl` int(10) default NULL,
   PRIMARY KEY  (`spid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=gb2312;
@@ -131,19 +131,19 @@ CREATE TABLE `shangpin` (
 -- ----------------------------
 -- Records of shangpin
 -- ----------------------------
-INSERT INTO `shangpin` VALUES ('1', 'å®«ä¿é¸¡ä¸ç›–é¥­', 'ä¸­å¼å¿«é¤', 'ä¸­å¼é£æ ¼', '12', 'å®«ä¿é¸¡å®šï¼Œç±³é¥­', '1397309856890.jpg', 'æ˜¯', '103');
-INSERT INTO `shangpin` VALUES ('2', 'æ—¥æœ¬è±†è…ç›–é¥­', 'ä¸­å¼å¿«é¤', 'ä¸­å¼', '15', 'æ—¥æœ¬è±†è…ç›–æµ‡é¥­', '1397309996801.jpg', 'å¦', '9');
-INSERT INTO `shangpin` VALUES ('3', 'é±¼é¦™è‚‰ä¸ç›–é¥­', 'ä¸­å¼å¿«é¤', 'ä¸­å¼', '12', 'é±¼é¦™è‚‰ä¸ç›–é¥­', '1397310042260.jpg', 'å¦', '11');
-INSERT INTO `shangpin` VALUES ('4', 'æ±‰å ¡åŒ…', 'è¥¿å¼å¼€é¤', 'ç¾å¼å¿«é¤', '18', 'æ±‰å ¡åŒ…', '1397310393962.jpg', 'å¦', '13');
-INSERT INTO `shangpin` VALUES ('5', 'ç‚¸é¸¡è…¿', 'è¥¿å¼å¼€é¤', 'ç¾å›½', '21', 'ç‚¸é¸¡è…¿', '1397310437097.jpg', 'å¦', '13');
-INSERT INTO `shangpin` VALUES ('6', 'è›‹èŠ±æ±¤', 'æ±¤ç±»', 'ä¸­å¼å¿«é¤', '8', 'è›‹èŠ±æ±¤', '1397310505515.jpg', 'å¦', '12');
-INSERT INTO `shangpin` VALUES ('7', 'å¯ä¹', 'é¥®æ–™', 'å¤©æ´¥', '3', 'å¯ä¹', '1397310589261.jpg', 'å¦', '12');
-INSERT INTO `shangpin` VALUES ('8', 'æœæ±', 'é¥®æ–™', 'æœ¬åœ°äº§', '5', 'æœæ±', '1397310619089.jpg', 'å¦', '1');
-INSERT INTO `shangpin` VALUES ('9', 'ç›–é¥­', 'ä¸­å¼å¿«é¤', 'ä¸­å›½', '22', 'ç›–é¥­', '1397311420087.jpg', 'å¦', '2');
-INSERT INTO `shangpin` VALUES ('10', 'çº¢çƒ§æ’éª¨', 'ä¸­å¼å¿«é¤', 'ä¸­å¼é£æ ¼', '33', 'çº¢çƒ§æ’éª¨', '1429781712572.jpg', 'å¦', '222');
-INSERT INTO `shangpin` VALUES ('11', 'æ³•å¼å¿«é¤', 'è¥¿å¼å¼€é¤', 'ä¸€ä¸ªç§’åŒ…', '12', 'ä¸€ä¸ªç§’åŒ…', '1429784131502.jpg', 'å¦', '22');
-INSERT INTO `shangpin` VALUES ('12', 'å•¤é…’', 'é¥®æ–™', 'å¾·å›½å•¤é…’', '10', 'å•¤é…’', '1429785713237.jpg', 'å¦', '2222');
-INSERT INTO `shangpin` VALUES ('13', 'çš®è›‹è±†è…', 'ä¸­å¼å¿«é¤', '1231', '312', '1231', '1461725135147.jpg', 'å¦', '11');
+INSERT INTO `shangpin` VALUES ('1', '¹¬±£¼¦¶¡¸Ç·¹', 'ÖĞÊ½¿ì²Í', 'ÖĞÊ½·ç¸ñ', '12', '¹¬±£¼¦¶¨£¬Ã×·¹', '1397309856890.jpg', 'ÊÇ', '103');
+INSERT INTO `shangpin` VALUES ('2', 'ÈÕ±¾¶¹¸¯¸Ç·¹', 'ÖĞÊ½¿ì²Í', 'ÖĞÊ½', '15', 'ÈÕ±¾¶¹¸¯¸Ç½½·¹', '1397309996801.jpg', '·ñ', '9');
+INSERT INTO `shangpin` VALUES ('3', 'ÓãÏãÈâË¿¸Ç·¹', 'ÖĞÊ½¿ì²Í', 'ÖĞÊ½', '12', 'ÓãÏãÈâË¿¸Ç·¹', '1397310042260.jpg', '·ñ', '11');
+INSERT INTO `shangpin` VALUES ('4', 'ºº±¤°ü', 'Î÷Ê½¿ª²Í', 'ÃÀÊ½¿ì²Í', '18', 'ºº±¤°ü', '1397310393962.jpg', '·ñ', '13');
+INSERT INTO `shangpin` VALUES ('5', 'Õ¨¼¦ÍÈ', 'Î÷Ê½¿ª²Í', 'ÃÀ¹ú', '21', 'Õ¨¼¦ÍÈ', '1397310437097.jpg', '·ñ', '13');
+INSERT INTO `shangpin` VALUES ('6', 'µ°»¨ÌÀ', 'ÌÀÀà', 'ÖĞÊ½¿ì²Í', '8', 'µ°»¨ÌÀ', '1397310505515.jpg', '·ñ', '12');
+INSERT INTO `shangpin` VALUES ('7', '¿ÉÀÖ', 'ÒûÁÏ', 'Ìì½ò', '3', '¿ÉÀÖ', '1397310589261.jpg', '·ñ', '12');
+INSERT INTO `shangpin` VALUES ('8', '¹ûÖ­', 'ÒûÁÏ', '±¾µØ²ú', '5', '¹ûÖ­', '1397310619089.jpg', '·ñ', '1');
+INSERT INTO `shangpin` VALUES ('9', '¸Ç·¹', 'ÖĞÊ½¿ì²Í', 'ÖĞ¹ú', '22', '¸Ç·¹', '1397311420087.jpg', '·ñ', '2');
+INSERT INTO `shangpin` VALUES ('10', 'ºìÉÕÅÅ¹Ç', 'ÖĞÊ½¿ì²Í', 'ÖĞÊ½·ç¸ñ', '33', 'ºìÉÕÅÅ¹Ç', '1429781712572.jpg', '·ñ', '222');
+INSERT INTO `shangpin` VALUES ('11', '·¨Ê½¿ì²Í', 'Î÷Ê½¿ª²Í', 'Ò»¸öÃë°ü', '12', 'Ò»¸öÃë°ü', '1429784131502.jpg', '·ñ', '22');
+INSERT INTO `shangpin` VALUES ('12', 'Æ¡¾Æ', 'ÒûÁÏ', 'µÂ¹úÆ¡¾Æ', '10', 'Æ¡¾Æ', '1429785713237.jpg', '·ñ', '2222');
+INSERT INTO `shangpin` VALUES ('13', 'Æ¤µ°¶¹¸¯', 'ÖĞÊ½¿ì²Í', '1231', '312', '1231', '1461725135147.jpg', '·ñ', '11');
 
 -- ----------------------------
 -- Table structure for splb
@@ -151,17 +151,18 @@ INSERT INTO `shangpin` VALUES ('13', 'çš®è›‹è±†è…', 'ä¸­å¼å¿«é¤', '1231', '31
 DROP TABLE IF EXISTS `splb`;
 CREATE TABLE `splb` (
   `splbid` int(11) NOT NULL auto_increment,
-  `lb` varchar(40) default NULL COMMENT 'ç±»åˆ«',
+  `lb` varchar(40) default NULL COMMENT 'Àà±ğ',
+  `yhid` int(11) default NULL COMMENT 'ËùÊôÂô¼Ò',
   PRIMARY KEY  (`splbid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=gb2312;
 
 -- ----------------------------
 -- Records of splb
 -- ----------------------------
-INSERT INTO `splb` VALUES ('1', 'ä¸­å¼å¿«é¤');
-INSERT INTO `splb` VALUES ('2', 'è¥¿å¼å¼€é¤');
-INSERT INTO `splb` VALUES ('3', 'æ±¤ç±»');
-INSERT INTO `splb` VALUES ('4', 'é¥®æ–™');
+INSERT INTO `splb` VALUES ('1', 'ÖĞÊ½¿ì²Í',1);
+INSERT INTO `splb` VALUES ('2', 'Î÷Ê½¿ª²Í',4);
+INSERT INTO `splb` VALUES ('3', 'ÌÀÀà',1);
+INSERT INTO `splb` VALUES ('4', 'ÒûÁÏ',4);
 
 -- ----------------------------
 -- Table structure for xinwen
@@ -169,21 +170,21 @@ INSERT INTO `splb` VALUES ('4', 'é¥®æ–™');
 DROP TABLE IF EXISTS `xinwen`;
 CREATE TABLE `xinwen` (
   `xwid` int(11) NOT NULL auto_increment,
-  `bt` varchar(40) default NULL COMMENT 'æ ‡é¢˜',
-  `nr` varchar(40) default NULL COMMENT 'å†…å®¹',
-  `sj` varchar(40) default NULL COMMENT 'æ—¶é—´',
-  `yh` varchar(40) default NULL COMMENT 'ç”¨æˆ·',
+  `bt` varchar(40) default NULL COMMENT '±êÌâ',
+  `nr` varchar(40) default NULL COMMENT 'ÄÚÈİ',
+  `sj` varchar(40) default NULL COMMENT 'Ê±¼ä',
+  `yh` varchar(40) default NULL COMMENT 'ÓÃ»§',
   PRIMARY KEY  (`xwid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=gb2312;
 
 -- ----------------------------
 -- Records of xinwen
 -- ----------------------------
-INSERT INTO `xinwen` VALUES ('1', 'ç³»ç»Ÿä¸Šçº¿å•¦', 'ç³»ç»Ÿä¸Šçº¿å•¦', '2015-04-23 21:50:41', 'admin');
-INSERT INTO `xinwen` VALUES ('2', 'ç³»ç»Ÿä¸Šçº¿èœä»·ä¼˜æƒ ', 'ç³»ç»Ÿä¸Šçº¿èœä»·ä¼˜æƒ ', '2015-04-23 21:50:49', 'admin');
-INSERT INTO `xinwen` VALUES ('3', 'æµ‹è¯•å•¦', 'æµ‹è¯•å•¦', '2015-04-23 22:03:53', 'admin');
+INSERT INTO `xinwen` VALUES ('1', 'ÏµÍ³ÉÏÏßÀ²', 'ÏµÍ³ÉÏÏßÀ²', '2015-04-23 21:50:41', 'admin');
+INSERT INTO `xinwen` VALUES ('2', 'ÏµÍ³ÉÏÏß²Ë¼ÛÓÅ»İ', 'ÏµÍ³ÉÏÏß²Ë¼ÛÓÅ»İ', '2015-04-23 21:50:49', 'admin');
+INSERT INTO `xinwen` VALUES ('3', '²âÊÔÀ²', '²âÊÔÀ²', '2015-04-23 22:03:53', 'admin');
 INSERT INTO `xinwen` VALUES ('4', '31231', '1232131', '2015-04-23 18:15:55', 'admin');
-INSERT INTO `xinwen` VALUES ('5', 'æ²™å‘', 'é˜¿è¨å¾·å‘', '2016-04-27 10:45:57', 'admin');
+INSERT INTO `xinwen` VALUES ('5', 'É³·¢', '°¢ÈøµÂ·¢', '2016-04-27 10:45:57', 'admin');
 
 -- ----------------------------
 -- Table structure for yonghu
@@ -191,18 +192,19 @@ INSERT INTO `xinwen` VALUES ('5', 'æ²™å‘', 'é˜¿è¨å¾·å‘', '2016-04-27 10:45:57
 DROP TABLE IF EXISTS `yonghu`;
 CREATE TABLE `yonghu` (
   `yhid` int(11) NOT NULL auto_increment,
-  `yhm` varchar(40) default NULL COMMENT 'ç”¨æˆ·å',
-  `mm` varchar(40) default NULL COMMENT 'å¯†ç ',
-  `xm` varchar(40) default NULL COMMENT 'å§“å',
-  `qx` varchar(40) default NULL COMMENT 'æƒé™',
-  `dh` varchar(40) default NULL COMMENT 'ç”µè¯',
-  `dz` varchar(40) default NULL COMMENT 'åœ°å€',
+  `yhm` varchar(40) default NULL COMMENT 'ÓÃ»§Ãû',
+  `mm` varchar(40) default NULL COMMENT 'ÃÜÂë',
+  `xm` varchar(40) default NULL COMMENT 'ĞÕÃû',
+  `qx` varchar(40) default NULL COMMENT 'È¨ÏŞ',
+  `dh` varchar(40) default NULL COMMENT 'µç»°',
+  `dz` varchar(40) default NULL COMMENT 'µØÖ·',
   PRIMARY KEY  (`yhid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=gb2312;
 
 -- ----------------------------
 -- Records of yonghu
 -- ----------------------------
-INSERT INTO `yonghu` VALUES ('1', 'admin', 'admin', 'admin', 'ç®¡ç†å‘˜', '123', '123');
-INSERT INTO `yonghu` VALUES ('2', 'yh', 'yh', 'ç”¨æˆ·', 'ç”¨æˆ·', '23', '132');
-INSERT INTO `yonghu` VALUES ('3', '123', '123', '123', 'ç”¨æˆ·', '123', '123');
+INSERT INTO `yonghu` VALUES ('1', 'admin', 'admin', 'ÖĞ²Í¹ÜÀíÔ±', '¹ÜÀíÔ±', '123', '123');
+INSERT INTO `yonghu` VALUES ('4', 'admin1', 'admin1', 'Î÷²Í¹ÜÀíÔ±', '¹ÜÀíÔ±', '123', '123');
+INSERT INTO `yonghu` VALUES ('2', 'yh', 'yh', 'ÓÃ»§', 'ÓÃ»§', '23', '132');
+INSERT INTO `yonghu` VALUES ('3', '123', '123', '123', 'ÓÃ»§', '123', '123');
