@@ -7,7 +7,7 @@ request.setCharacterEncoding("gb2312");
 shangpinDao dao = new shangpinDao();
 ResultSet rs=null;
 int yhid = Integer.valueOf(request.getSession().getAttribute("yhid").toString());
-String sql=" and exists(select 1 from splb lb where lb.lb = lb and lb.yhid= "+ yhid +")";
+String sql=" and lb in (select lb.lb from splb lb where lb.yhid = "+ yhid +")";
 rs=dao.qlist(sql);
 /*
 菜品信息查看页面
