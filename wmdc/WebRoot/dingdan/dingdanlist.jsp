@@ -6,7 +6,13 @@ DBO db=new DBO();
 request.setCharacterEncoding("gb2312");
 dingdanDao dao = new dingdanDao();
 ResultSet rs=null;
-String sql="";
+int yhid = Integer.valueOf(request.getSession().getAttribute("yhid").toString());
+String sql=" and exists( "
++" select 1 from ddmx  mx  "
++" join shangpin sp on mx.sp  = sp.spid "
++" join splb lb on sp.lb = lb.lb and lb.yhid =  " + yhid
++" where ddid = mx.dd "
++" )";
 rs=dao.qlist(sql);
 /*
 订单信息查看页面

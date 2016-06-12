@@ -14,6 +14,8 @@ try{
 		splb splb=new splb();
 			splb.setSplbid((String)request.getParameter("keyid"));
 splb.setLb((String)request.getParameter("lb"));
+int yhid = Integer.valueOf(request.getSession().getAttribute("yhid").toString());
+splb.setYhid(yhid);
 
 			dao.insert(splb);
 }catch(Exception e){

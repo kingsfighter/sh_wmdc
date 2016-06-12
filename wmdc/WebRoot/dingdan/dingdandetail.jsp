@@ -136,7 +136,8 @@ body {
 		
        
 		  <%
-		  rs=db.query("select a.*,b.sp as spmc from ddmx a,shangpin b where  a.sp=b.spid and a.dd='"+keyid+"'");
+		  int yhid = Integer.valueOf(request.getSession().getAttribute("yhid").toString());
+		  rs=db.query("select a.*,b.sp as spmc from ddmx a,shangpin b,splb c where  a.sp=b.spid and a.dd='"+keyid+"' and c.lb=b.lb and c.yhid=" + yhid);
 		 
 		  int i=1;
 		  while(rs.next()){

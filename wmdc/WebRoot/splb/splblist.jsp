@@ -6,7 +6,8 @@ DBO db=new DBO();
 request.setCharacterEncoding("gb2312");
 splbDao dao = new splbDao();
 ResultSet rs=null;
-String sql="";
+int yhid = Integer.valueOf(request.getSession().getAttribute("yhid").toString());
+String sql=" and yhid=" + yhid;
 rs=dao.qlist(sql);
 /*
 菜品类别信息查看页面

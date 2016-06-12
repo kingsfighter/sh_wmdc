@@ -77,7 +77,8 @@ body {
 <td height="20" bgcolor="#FFFFFF">
 <select name="lb">
 <%
-String sql="select * from splb ";
+int yhid = Integer.valueOf(request.getSession().getAttribute("yhid").toString());
+String sql="select * from splb lb where lb.yhid=" + yhid;
 ResultSet rs=null;
 rs=db.query(sql);
 while(rs.next()){
